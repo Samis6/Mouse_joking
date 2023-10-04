@@ -3,6 +3,8 @@
     cursor: none;
     text-align: center;
 }
+
+/* A margem negativa é só para o botão ficar ainda no espaço da tela*/
 #meuBotao{
     margin: -15vh auto;
 }
