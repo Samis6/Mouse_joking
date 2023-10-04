@@ -1,0 +1,35 @@
+
+/*Style do modo bugado*/
+
+/*Esconder o cursor real como no outro*/
+* {
+    cursor: none;
+    text-align: center;
+}
+
+/*Definir o cursor que é exibido ao usuário se movendo em vez do real*/
+#move {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('Assets/cursor.png'); 
+    background-size: contain;   
+    background-repeat: no-repeat;
+}
+#meuBotao{
+    margin: -40vh auto;
+}
+
+#mouseCursorJamming {
+    /* Defina a largura e a altura desejadas para o elemento */
+    width: 100%; /* Ajuste conforme necessário */
+    height: 100vh; /* Ajuste conforme necessário */
+
+    /* Define a imagem de fundo e seu caminho */
+    background-image: url('Assets/wp8080813.jpg');
+    background-size: cover; /* Ajusta a imagem ao tamanho do elemento */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center; /* Centraliza a imagem no elemento */
+}

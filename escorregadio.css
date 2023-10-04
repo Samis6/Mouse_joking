@@ -1,0 +1,8 @@
+/* Aqui somente para esconder o cursor real */
+.clique{
+    cursor: none;
+    text-align: center;
+}
+#meuBotao{
+    margin: 0vh auto;
+}

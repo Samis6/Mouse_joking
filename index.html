@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Vincula o arquivo de estilo externo -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Vincula o arquivo de script externo -->
+    <script src="script.js"></script>
+    <title>Mouse Habilities Test</title>
+</head>
+<body class="clique">
+    <!-- Contêiner pra organizar os botões -->
+    <div class="button-container">
+        <!-- Botão para ativar o comportamento "bugado" -->
+        <button class="button" onclick="showMouseCursorJamming()">Acho q não to muito bem</button>
+        <!-- Botão para ativar o comportamento "escorrega" -->
+        <button class="button" onclick="showSlipperyMouseCursor()">Vou por aqui mesmo</button>
+    </div>
+    <!-- Div para o "bugado" -->
+    <div id="mouseCursorJamming" class="hidden">
+        <div onmousemove="moveme(this)"></div>
+        <div id="move"></div>
+    </div>
+
+    <!-- Div para o "escorrega" -->
+    <div id="slipperyMouseCursor" class="hidden">
+        <div id='canvas-container'>
+            <canvas id='canvas'></canvas>
+        </div>
+    </div>
+    <!-- Botão pra mostrar q conseguiu -->
+	<button id="meuBotao" class="button hidden">Clica aqui vai</button>
+</body>
+</html>

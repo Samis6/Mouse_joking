@@ -1,0 +1,45 @@
+
+
+
+/*Ocultar os 2*/
+	  .hidden {
+		  display: none;
+	  }
+
+/* Estilos para o contêiner dos botões */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os botões */
+    align-items: top; /* Centraliza verticalmente os botões */
+    height: 5vh; /* Define a altura para ocupar toda a altura da tela */
+}
+
+/* Estilos para os botões */
+.button {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 10px; /* Adiciona margem entre os botões para espaçamento */
+}
+
+.button:hover {
+    background-color: #2980b9;
+    color: #fff;
+    cursor: none;
+}
+
+    #move {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url('Assets/cursor.png'); 
+        background-size: contain;   
+        background-repeat: no-repeat;
+    }
