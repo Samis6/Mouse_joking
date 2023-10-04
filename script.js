@@ -1,10 +1,3 @@
-
-
-
-
-// Variável para rastrear qual estilo está atualmente ativo
-let currentStyle = "bugado"; // Pode ser "escorregadio" ou "bugado"
-
 // Função para alternar entre os estilos
 function toggleStyles() {
     if (currentStyle === "bugado") {
@@ -19,7 +12,6 @@ function toggleStyles() {
 
     }
 }
-
 
 // Função para carregar um script dinamicamente
 function loadScript(scriptName) {
@@ -50,14 +42,8 @@ function showSlipperyMouseCursor() {
 document.getElementById("showMouseCursorJammingButton").addEventListener("click", showMouseCursorJamming);
 document.getElementById("showSlipperyMouseCursorButton").addEventListener("click", showSlipperyMouseCursor);
 
-
-
-
-// Função para carregar um arquivo CSS dinamicamente
-function loadCSS(cssFileName) {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = cssFileName;
-    document.head.appendChild(link);
-}
-
+// Adiciona o evento de clique ao botão com o id "meuBotao"
+document.getElementById('meuBotao').addEventListener('click', function() {
+    // Exibe um alerta
+    alert("Né que conseguiu mesmo?!");
+});
