@@ -58,7 +58,11 @@ function loadCSS(cssFileName) {
 
 
 // Adiciona o evento de clique ao botão com o id "meuBotao"
-document.getElementById('meuBotao').addEventListener('click', function() {
-    // Exibe um alerta
-    alert("Né que conseguiu mesmo?");
+document.addEventListener('DOMContentLoaded', function() {
+    var meuBotao = document.getElementById('meuBotao');  
+    // Adiciona o evento de clique ao botão
+    meuBotao.addEventListener('click', function() {
+        // Exibe um alerta
+        alert("Né que conseguiu mesmo?");
+    });
 });
