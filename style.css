@@ -43,3 +43,9 @@
         background-size: contain;   
         background-repeat: no-repeat;
     }
+
+
+@media (max-width: 768px) {
+  .button {
+height: 12vh;
+}
