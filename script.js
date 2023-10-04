@@ -47,3 +47,13 @@ document.getElementById('meuBotao').addEventListener('click', function() {
     // Exibe um alerta
     alert("Né que conseguiu mesmo?!");
 });
+
+// Função para carregar um arquivo CSS dinamicamente
+function loadCSS(cssFileName) {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = cssFileName;
+    document.head.appendChild(link);
+}
+
+
