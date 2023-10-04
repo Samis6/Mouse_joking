@@ -44,8 +44,8 @@
         background-repeat: no-repeat;
     }
 
-
+//Tamanho do botão no mobile pra que seja possível ler tudo
 @media (max-width: 768px) {
-  .button {
-height: 12vh;
+.button-container {
+    height: 12vh; /* Define a altura para ocupar toda a altura da tela */
 }
