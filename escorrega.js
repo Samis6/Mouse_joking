@@ -74,3 +74,9 @@ window.addEventListener('touchmove', function (e) {
     e.preventDefault();
     motchmove(e.touches[0]);
 }, false);
+
+// Adiciona o evento de clique ao botão com o id "meuBotao"
+document.getElementById('meuBotao').addEventListener('click', function() {
+    // Exibe um alerta
+    alert("Né que conseguiu mesmo?!");
+});

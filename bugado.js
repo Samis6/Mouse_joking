@@ -19,3 +19,8 @@ function moveme(element) {
     element.style.left = (event.pageX + rand) + "px";
     element.style.top = (event.pageY + rand) + "px";
 }
+// Adiciona o evento de clique ao botão com o id "meuBotao"
+document.getElementById('meuBotao').addEventListener('click', function() {
+    // Exibe um alerta
+    alert("Né que conseguiu mesmo?!");
+});

@@ -1,3 +1,7 @@
+
+
+
+
 // Variável para rastrear qual estilo está atualmente ativo
 let currentStyle = "bugado"; // Pode ser "escorregadio" ou "bugado"
 
@@ -46,11 +50,7 @@ function showSlipperyMouseCursor() {
 document.getElementById("showMouseCursorJammingButton").addEventListener("click", showMouseCursorJamming);
 document.getElementById("showSlipperyMouseCursorButton").addEventListener("click", showSlipperyMouseCursor);
 
-// Adiciona o evento de clique ao botão com o id "meuBotao"
-document.getElementById("meuBotao").addEventListener("click", function() {
-    // Exibe um alerta
-    alert("Né que conseguiu mesmo?");
-});
+
 
 
 // Função para carregar um arquivo CSS dinamicamente
@@ -60,3 +60,4 @@ function loadCSS(cssFileName) {
     link.href = cssFileName;
     document.head.appendChild(link);
 }
+
